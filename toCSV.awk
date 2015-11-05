@@ -1,10 +1,13 @@
 #!/bin/awk -f
 BEGIN {
-    print"'''Please do not promote this list to mainspace, it is an experimental data-driven list which lives primarily at https://github.com/stuartyeates/rsnz-fellows '''\n\n\n{| class="wikitable sortable"\n|+ Sortable table\n|-\n! scope="col" | Alphabetic\n! scope="col" | Numeric\n! scope="col" | Date\n! scope="col" | Unsortable\n|-\n";
+    print"'''Please do not promote this list to mainspace, it is an experimental data-driven list which lives primarily at https://github.com/stuartyeates/rsnz-fellows '''\n\n\n{| class=\"wikitable sortable\"\n|+ List of Fellows of the Royal Society of New Zealand \n|-\n! scope=\"col\" | Name\n! scope=\"col\" | Elected\n! scope=\"col\" | Born\n! scope=\"col\" | Died\n|-\n";
 } 
 {
+    #  percent escaped full name for searching
     FULLESCAPED=$3 " " $2;
     gsub(" ","%%22",FULLESCAPED);
+
+    # best wikilink for this person
 
     print "|-\n|[["$3,$2"]]\n|"$1"\n|"$4"\n|"$5"\n|[http://viaf.org/viaf/"$6" VIAF], [http://viaf.org/viaf/search?query=local.names+all+%22"FULLESCAPED"%22 VIAF search]\n|"$7""; 
     
