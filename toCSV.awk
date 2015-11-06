@@ -8,9 +8,20 @@ BEGIN {
     gsub(" ","%%22",FULLESCAPED);
 
     # best wikilink for this person
+    if ($14=="")
+	WIKI=$3 " " $2;
+    else
+	WIKI=$14;
 
-    print "|-\n|[["$3,$2"]]\n|"$1"\n|"$4"\n|"$5"\n|[http://viaf.org/viaf/"$6" VIAF], [http://viaf.org/viaf/search?query=local.names+all+%22"FULLESCAPED"%22 VIAF search]\n|"$7""; 
-    
+    print "|-\n|[[" WIKI "|" $3,$2 "]]\n|" $1 "\n|" $4 "\n|" $5
+
+    if ($6!="")
+	print "|[http://viaf.org/viaf/"$6" VIAF]";
+    else
+	print "|[http://viaf.org/viaf/search?query=local.names+all+%22"FULLESCAPED"%22 VIAF search]\n|"$7""; 
+   
+    print "|" $7;
+
 if ($8!="") 
 	print "|"$8"<ref>"$9"</ref>"; 
     else 
@@ -21,7 +32,6 @@ if ($8!="")
     else 
 	print "|";  
 
-    if ($11!="")
 	
 
 
