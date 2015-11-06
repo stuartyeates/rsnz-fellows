@@ -1,6 +1,23 @@
 #!/bin/awk -f
 BEGIN {
-    print"'''Please do not promote this list to mainspace, it is an experimental data-driven list which lives primarily at https://github.com/stuartyeates/rsnz-fellows '''\n\n\n{| class=\"wikitable sortable\"\n|+ List of Fellows of the Royal Society of New Zealand \n|-\n! scope=\"col\" | Name\n! scope=\"col\" | Elected\n! scope=\"col\" | Born\n! scope=\"col\" | Died\n|-\n";
+    print"'''Please do not promote this list to mainspace, it is an experimental data-driven list which lives primarily at https://github.com/stuartyeates/rsnz-fellows '''";
+    print; 
+    print;
+    print;
+    print "{| class=\"wikitable sortable\"";
+    print "|+ List of Fellows of the Royal Society of New Zealand";
+    print "|-! scope=\"col\" | Name";
+    print "|-! scope=\"col\" | Elected";
+    print "|-! scope=\"col\" | Born";
+    print "|-! scope=\"col\" |Died ";
+    print "|-! scope=\"col\" |[[VIAF]] ";
+    print "|-! scope=\"col\" |Gender ";
+    print "|-! scope=\"col\" |Orientation ";
+    print "|-! scope=\"col\" |Indigenous affilication ";
+    print "|-! scope=\"col\" ||[[RSNZ]] Obiturary ";
+    print "|-! scope=\"col\" |Other Obit ";
+    print "|-! scope=\"col\" |Wikipedia article";
+    print "|-"
 } 
 {
     #  percent escaped full name for searching
