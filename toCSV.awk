@@ -5,7 +5,7 @@ BEGIN {
 {
     #  percent escaped full name for searching
     FULLESCAPED=$3 " " $2;
-    gsub(" ","%%22",FULLESCAPED);
+    gsub(" ","%%20",FULLESCAPED);
 
     # best wikilink for this person
     if ($14=="")
@@ -13,8 +13,10 @@ BEGIN {
     else
 	WIKI=$14;
 
+    # name and vital dates
     print "|-\n|[[" WIKI "|" $3,$2 "]]\n|" $1 "\n|" $4 "\n|" $5
 
+    # viaf
     if ($6!="")
 	print "|[http://viaf.org/viaf/"$6" VIAF]";
     else
@@ -22,20 +24,31 @@ BEGIN {
    
     print "|" $7;
 
-if ($8!="") 
+    # orientation
+    if ($8!="") 
 	print "|"$8"<ref>"$9"</ref>"; 
     else 
 	print "|";  
 
+    # iwi
     if ($10!="") 
 	print "|"$10"<ref>"$11"</ref>"; 
     else 
 	print "|";  
+    
+    # 
+    if ($12!="")
+	printf "|[" $12 " RSNZ obit]";
+    else
+	printf "|[http://rsnz.natlib.govt.nz/search/results.html?text=" FULLESCAPED " Search 1] [http://www.royalsociety.org.nz/organisation/academy/fellowship/obituaries/ Search 2]\n";
 
-	
+    if ($13!="")
+	printf "|" $12 "\n";
+    else
+	printf "|[https://scholar.google.co.nz/scholar?q=%22" FULLESCAPED "%22 Search 1] [https://www.google.co.nz/search?q=obiturary%20%22" FULLESCAPED "%22 Search 2]";
 
 
-    print "\n|"$13"\n|[["$14"]]";
+    print "\n|[["$14"]]";
 
 
 }
