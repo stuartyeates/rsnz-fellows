@@ -18,9 +18,9 @@ BEGIN {
 
     # viaf
     if ($6!="")
-	print "|[http://viaf.org/viaf/"$6" VIAF]";
+	printf "|[http://viaf.org/viaf/"$6" VIAF]\n";
     else
-	print "|[http://viaf.org/viaf/search?query=local.names+all+%22"FULLESCAPED"%22 VIAF search]\n|"$7""; 
+	printf "|[http://viaf.org/viaf/search?query=local.names+all+%%22"FULLESCAPED"%%22 VIAF search]\n"; 
    
     print "|" $7;
 
@@ -38,18 +38,19 @@ BEGIN {
     
     # 
     if ($12!="")
-	printf "|[" $12 " RSNZ obit]";
+	printf "|[" $12 " RSNZ obit]\n|";
     else
-	printf "|[http://rsnz.natlib.govt.nz/search/results.html?text=" FULLESCAPED " Search 1] [http://www.royalsociety.org.nz/organisation/academy/fellowship/obituaries/ Search 2]\n";
-
+	printf "|[http://rsnz.natlib.govt.nz/search/results.html?text=" FULLESCAPED " Search 1] [http://www.royalsociety.org.nz/organisation/academy/fellowship/obituaries/ Search 2]\n|";
+    
     if ($13!="")
-	printf "|" $12 "\n";
+	printf "[" $13 " obit]";
+ 
+    printf "[https://scholar.google.co.nz/scholar?q=%%22" FULLESCAPED "%%22 Search 1] [https://www.google.co.nz/search?q=obiturary%%20%%22" FULLESCAPED "%%22 Search 2]";
+    
+    if ($14!="")
+	print "\n|[["$14"]]";
     else
-	printf "|[https://scholar.google.co.nz/scholar?q=%22" FULLESCAPED "%22 Search 1] [https://www.google.co.nz/search?q=obiturary%20%22" FULLESCAPED "%22 Search 2]";
-
-
-    print "\n|[["$14"]]";
-
+	print "\n|";
 
 }
 
