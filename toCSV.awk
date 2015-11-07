@@ -1,7 +1,8 @@
 #!/bin/awk -f
 BEGIN {
-    print"'''Please do not promote this list to mainspace, it is an experimental data-driven list which lives primarily at https://github.com/stuartyeates/rsnz-fellows '''";
-    print; 
+    print "'''Please do not promote this list to mainspace, it is an experimental data-driven list which lives primarily at https://github.com/stuartyeates/rsnz-fellows '''";
+    print "'''TODO:''' sort people marked on the RSNZ website as no longer memebrs; find refs for everyone; double check gender";
+    print ""; 
     print;
     print;
     print "{| class=\"wikitable sortable\"";
@@ -9,14 +10,14 @@ BEGIN {
     print "|-! scope=\"col\" | Name";
     print "|-! scope=\"col\" | Elected";
     print "|-! scope=\"col\" | Born";
-    print "|-! scope=\"col\" |Died ";
-    print "|-! scope=\"col\" |[[VIAF]] ";
-    print "|-! scope=\"col\" |Gender ";
-    print "|-! scope=\"col\" |Orientation ";
-    print "|-! scope=\"col\" |Indigenous affilication ";
-    print "|-! scope=\"col\" ||[[RSNZ]] Obiturary ";
-    print "|-! scope=\"col\" |Other Obit ";
-    print "|-! scope=\"col\" |Wikipedia article";
+    print "|-! scope=\"col\" | Died ";
+    print "|-! scope=\"col\" | [[VIAF]] ";
+    print "|-! scope=\"col\" | Gender ";
+    print "|-! scope=\"col\" | Orientation ";
+    print "|-! scope=\"col\" | Indigenous affilication ";
+    print "|-! scope=\"col\" | [[RSNZ]] refs ";
+    print "|-! scope=\"col\" | Other refs ";
+    print "|-! scope=\"col\" | Wikipedia article";
     print "|-"
 } 
 {
