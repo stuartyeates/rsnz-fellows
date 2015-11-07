@@ -1,13 +1,13 @@
-"Date","Surname","Forenames","DOB","DOD","VIAF","Sex","Orientation","Orientation URL","Indigenous affilication","Indigenous affilication URL","RSNZ obit","Other Obits","Wikipedia name"
+"Date","Surname","Forenames","DOB","DOD","VIAF","Sex","Orientation","Orientation URL","Indigenous affilication","Indigenous affilication URL","RSNZ bio","Other independent bios (obits, etc)","Wikipedia name"
 1997,"Abraham","Wickliffe Carson",,,73926541,"male",,,,,,,
-2002,"Abrahamson","John",,,56276087,,,,,,,,
-1959,"Adams","William Edgar",1908,1973,53156760,,,,,,,"http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1271579/ ",
+2002,"Abrahamson","John",,,56276087,"male",,,,,,,
+1959,"Adams","William Edgar",1908,1973,53156760,"male",,,,,,"http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1271579/ ",
 1928,"Allan","Harry Howard",1882,1957,40683664,"male",,,,,,,"Harry Howard Barton Allan"
-1940,"Allan","Robin Sutcliffe",1900,1966,6993339,"male",,,,,,,"Robin Sutcliffe Allan"
-1961,"Allen","Kenneth Radway",1911,2008,,,,,,,,,
-1923,"Andersen","Johannes Carl",1873,1962,,,,,,,,,
-1991,"Anderson","Atholl John",,,,,,,,,,,
-2013,"Anderson","Marti Jane",,,,,,,,,,,
+1940,"Allan","Robin Sutcliffe",1900,1966,6993339,"male"," ",,,,,,"Robin Sutcliffe Allan"
+1961,"Allen","Kenneth Radway",1911,2008,94428764,"male"," ",,,,"http://www.royalsociety.org.nz/publications/reports/yearbooks/year2008/obituaries/radway-allen/","https://www.niwa.co.nz/publications/wa/vol16-no2-june-2008/news-fisheries-scientist-k-radway-allen-1911-2008-time-to-wet-the-whistle-researching-the-wa","Kenneth Radway Allen"
+1923,"Andersen","Johannes Carl",1873,1962,54246837,"male",,,,,,"http://www.teara.govt.nz/en/biographies/3a15/andersen-johannes-carl","Johannes Carl Andersen"
+1991,"Anderson","Atholl John",1943,,54475,"male",,,,,,"http://press.anu.edu.au/wp-content/uploads/2011/03/ch0118.pdf",
+2013,"Anderson","Marti Jane",,,61241486,"female",,,,,,,
 1932,"Archey","Gilbert",1890,1974,,,,,,,,,
 1986,"Arrillaga","Josu",1934,2009,,,,,,,,,
 1939,"Askew","Henry Oscar",1899,1977,,,,,,,,,
@@ -477,7 +477,7 @@
 1994,"Reeve","Anthony Edmund",,,,,,,,,,,
 1978,"Reid","Campbell Stuart Wemyss",1922,1996,,,,,,,,,
 1997,"Reid","Ian Reginald",,,,,,,,,,,
-2008,"Reyners","Martin Everardus",,,,,,,,,,,
+2008,"Reyners","Martin Everardus",1950,,,,,,,,,,"Martin Reyners"
 1959,"Richardson","Laurence Robert",1911,1988,,,,,,,,,
 1955,"Richdale","Lancelot Eric",1900,1983,,,,,,,,,
 2001,"Richards","Mark",,,,,,,,,,,
